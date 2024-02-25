@@ -3,10 +3,59 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font aewsome link -->
+    <script
+      src="https://kit.fontawesome.com/c0e6a970a0.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="./style.css" />
-    <title>Dom</title>
+    <title>Dom - Document Object Model</title>
   </head>
-  <body></body>
+  <body>
+    <section class="container">
+      <div class="header">
+        <i class="fa-regular fa-rectangle-list"></i>
+      </div>
+      <h3 class="header-logo">To-do app</h3>
+      <form class="new-task-container box">
+        <label for="new-task">Add new task</label>
+        <input type="text" id="new-task" />
+        <button>Add task</button>
+      </form>
+      <div class="task-container">
+        <div class="todo-list box">
+          <h3>incomplete tasks</h3>
+          <ul class="items">
+            <li class="item">
+              <input type="checkbox" />
+              <label>Task Name</label>
+              <button>Update</button>
+            </li>
+            <li class="item">
+              <input type="checkbox" />
+              <label>Task Name</label>
+              <button>Update</button>
+            </li>
+            <li class="item">
+              <input type="checkbox" />
+              <label>Task Name</label>
+              <button>Update</button>
+            </li>
+          </ul>
+        </div>
+        <div class="todo-list box">
+          <h3>incomplete tasks</h3>
+          <ul class="items">
+            <li class="item">
+              <input type="checkbox" />
+              <label>Task Name</label>
+              <button style="background-color: red">Delete</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </body>
 
   <script src="./script.js"></script>
 </html>
