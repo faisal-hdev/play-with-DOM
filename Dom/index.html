@@ -3,43 +3,45 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- font aewsome link -->
+    <!-- font awesome link -->
     <script
       src="https://kit.fontawesome.com/c0e6a970a0.js"
       crossorigin="anonymous"
     ></script>
+    <!-- css link -->
     <link rel="stylesheet" href="./style.css" />
     <title>Dom - Document Object Model</title>
   </head>
   <body>
-    <section class="container">
+    <section class="container" id="container">
       <div class="header">
         <i class="fa-regular fa-rectangle-list"></i>
       </div>
-      <h3 class="header-logo">To-do app</h3>
+      <h3 class="header-logo" id="header">To-do app</h3>
       <form class="new-task-container box">
         <label for="new-task">Add new task</label>
         <input type="text" id="new-task" />
-        <button>Add task</button>
+        <input type="submit" id="add-task" value="Add Task" />
+        <!-- <button>Add task</button> -->
       </form>
       <div class="task-container">
         <div class="todo-list box">
           <h3>incomplete tasks</h3>
-          <ul class="items">
+          <ul class="items" id="items">
             <li class="item">
               <input type="checkbox" />
               <label>Task Name</label>
-              <button>Update</button>
+              <button class="btn">Update</button>
             </li>
             <li class="item">
               <input type="checkbox" />
               <label>Task Name</label>
-              <button>Update</button>
+              <button class="btn">Update</button>
             </li>
             <li class="item">
               <input type="checkbox" />
               <label>Task Name</label>
-              <button>Update</button>
+              <button class="btn">Update</button>
             </li>
           </ul>
         </div>
@@ -49,13 +51,15 @@
             <li class="item">
               <input type="checkbox" />
               <label>Task Name</label>
-              <button style="background-color: red">Delete</button>
+              <button class="btn delete" style="background-color: red">
+                Delete
+              </button>
             </li>
           </ul>
         </div>
       </div>
     </section>
   </body>
-
-  <script src="./script.js"></script>
+  <script src="./js/app.js"></script>
+  <script src="./js/script.js"></script>
 </html>
